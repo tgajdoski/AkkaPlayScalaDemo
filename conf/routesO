@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                           controllers.HomeController.index
+GET     /stocks                     controllers.HomeController.stocks
+
+
+
+GET     /ws                         controllers.HomeController.ws
+GET     /sentiment/:symbol          controllers.StockSentiment.get(symbol)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+# GET     /liveTweets         		controllers.HomeController.liveTweets(query: List[String])
+# GET     /stream					    controllers.HomeController.stream(query: String)

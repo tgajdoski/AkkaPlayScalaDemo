@@ -1,0 +1,22 @@
+@()(implicit r: Request[_])
+
+@main("Mixed Tweets") {
+<div data-ws-url="@routes.HomeController.ws.webSocketURL()">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">Reactive Stocks</a>
+                <form id="addsymbolform" class="navbar-form pull-right">
+                    <input id="addsymboltext" type="text" class="span2" placeholder="SYMBOL">
+                    <button type="submit" class="btn">Add Stock</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="stocks" class="container">
+
+    </div>
+</div>
+}
+
