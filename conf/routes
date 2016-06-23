@@ -4,6 +4,7 @@
 
 GET     /                           controllers.HomeController.index
 GET     /stocks                     controllers.HomeController.stocks
+GET     /ins                        controllers.HomeController.inspinia
 GET     /ws                         controllers.HomeController.ws
 GET     /sentiment/:symbol          controllers.StockSentiment.get(symbol)
 

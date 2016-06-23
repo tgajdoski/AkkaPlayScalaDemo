@@ -1,7 +1,7 @@
 @()(implicit r: Request[_])
-
 @main("Mixed Tweets") {
-<div data-ws-url="@routes.HomeController.ws.webSocketURL()">
+
+<div id = "stockcharts" data-ws-url="@routes.HomeController.ws.webSocketURL()">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
@@ -18,5 +18,6 @@
 
     </div>
 </div>
+
 }
 

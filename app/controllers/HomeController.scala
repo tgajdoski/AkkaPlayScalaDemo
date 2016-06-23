@@ -39,6 +39,12 @@ class HomeController @Inject()(@Named("stocksActor") stocksActor: ActorRef,
     Ok(views.html.stocks())
   }
 
+
+  def inspinia = Action {implicit  request =>
+    Ok(views.html.inspin())
+  }
+
+
   /**
    * Creates a websocket.  `acceptOrResult` is preferable here because it returns a
    * Future[Flow], which is required internally.
